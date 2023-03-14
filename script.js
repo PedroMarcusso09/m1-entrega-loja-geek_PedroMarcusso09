@@ -124,10 +124,5 @@ createIten(listFigures[i], listFigures[i].type)
 }
 
 for (let i = 0; i < listPaintings.length; i++) {
-<<<<<<< HEAD
 createIten(listPaintings[i], listPaintings[i].type)
 }
-=======
-criarItem(listPaintings[i], listPaintings[i].type)
-}
->>>>>>> 08bb6e7a6dff7fd9fee3a22a171a1124d0d3ed05
