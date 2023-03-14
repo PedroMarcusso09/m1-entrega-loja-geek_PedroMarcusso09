@@ -73,7 +73,7 @@ let itens = [
   },
 ];
   
-function separarItensPorTipo(itens) {
+function separateItemsByType(itens) {
   let listPaintings = []
   let listFigures = []
 
@@ -89,40 +89,40 @@ function separarItensPorTipo(itens) {
     listFigures: listFigures
   }
 }
-const { listPaintings, listFigures } = separarItensPorTipo(itens)
+const { listPaintings, listFigures } = separateItemsByType(itens)
 
-let secaoListFrames = document.querySelector('.painting_section')
-let secaoListFigures = document.querySelector('.figure_section')
+let sectionListFrames = document.querySelector('.painting_section')
+let sectionListFigures = document.querySelector('.figure_section')
 
-function criarItem(objeto, tipo) {
-let criarItemLista = document.createElement('li')
-let criarImagem = document.createElement('img')
-let criarNome = document.createElement('h2')
-let criarPreco = document.createElement('p')
+function createIten(object, type) {
+let createListIten = document.createElement('li')
+let createImage = document.createElement('img')
+let createName = document.createElement('h2')
+let createPrice = document.createElement('p')
 
-criarItemLista.classList.add('produto')
-criarImagem.classList.add('imagem_produto')
-criarImagem.src = objeto.image
-criarNome.classList.add('nome_produto')
-criarNome.innerText = objeto.name
-criarPreco.classList.add('valor_produto')
-criarPreco.innerText = objeto.price
+createListIten.classList.add('product')
+createImage.classList.add('puduct_image')
+createImage.src = object.image
+createName.classList.add('product_name')
+createName.innerText = object.name
+createPrice.classList.add('product_price')
+createPrice.innerText = object.price
 
-criarItemLista.appendChild(criarImagem)
-criarItemLista.appendChild(criarNome)
-criarItemLista.appendChild(criarPreco)
+createListIten.appendChild(createImage)
+createListIten.appendChild(createName)
+createListIten.appendChild(createPrice)
 
-if (tipo.toLowerCase() === 'painting') {
-secaoListFrames.appendChild(criarItemLista)
-} else if (tipo.toLowerCase() === 'action figures') {
-secaoListFigures.appendChild(criarItemLista)
+if (type.toLowerCase() === 'painting') {
+sectionListFrames.appendChild(createListIten)
+} else if (type.toLowerCase() === 'action figures') {
+sectionListFigures.appendChild(createListIten)
   }
 }
 
 for (let i = 0; i < listFigures.length; i++) {
-criarItem(listFigures[i], listFigures[i].type)
+createIten(listFigures[i], listFigures[i].type)
 }
 
 for (let i = 0; i < listPaintings.length; i++) {
-criarItem(listPaintings[i], listPaintings[i].type)
+createIten(listPaintings[i], listPaintings[i].type)
 }
