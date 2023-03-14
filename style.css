@@ -21,11 +21,11 @@ body{
     margin-left: 25px;
 }
 
-.buttons{
+.botoes{
     margin-right: 25px;
 }
 
-.button{
+.botao{
   width: 150px;
   height: 40px;
   color: #0A99FE;
@@ -37,7 +37,7 @@ body{
   margin-left: 20px;
 }
 
-.button:hover{
+.botao:hover{
   background-color: #0A99FE;
   color: #FFFFFF;
 }
@@ -47,8 +47,8 @@ body{
     overflow-x: auto;
 }
 
-.title {
-    color:#1B1B1B;
+.titulo {
+    color: 	#1B1B1B;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     margin-bottom: 20px;
@@ -59,7 +59,7 @@ ul {
     display: flex;
 }
 
-.product {
+.produto {
   display: flex;
   list-style: none;
   flex-direction: column;
@@ -73,21 +73,21 @@ ul {
   text-align: center;
 }
 
-.product_image{
+.imagem_produto{
     width: 100%;
     object-fit: cover;
     height: 60%;
     border-radius: 8px;
 }
 
-.product_name{
+.nome_produto{
     color: #1B1B1B;
     font-size: 20px;
     margin: 8px auto;
 }
 
-.product_price{
-    color: #868383;
+.valor_produto{
+    color: 	#868383;
     font-size: 16px;
     margin: 8px auto
 }
